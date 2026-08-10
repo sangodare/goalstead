@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+:root {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    --cobalt: hsl(215.9 90.9% 47.3%);
+    --cobalt-hover: hsl(216.3 91.3% 40.8%);
+    --cobalt-pressed: hsl(216.1 92% 34.3%);
+    --cobalt-soft: hsl(217.1 100% 95.9%);
+    --cobalt-soft-pressed: hsl(216 100% 93.1%);
+    --focus-ring: hsl(215.3 87% 75.9%);
+
+    --ink-950: hsl(220.9 39.3% 11%);
+    --ink-600: hsl(215 13.8% 34.1%);
+    --canvas: hsl(225 33.3% 97.6)%;
+    --surface: hsl(0 0% 100%);
+    --line: hsl(217.5 17.4% 91)%;
+
+    --success-700: hsl(142.4 71.8% 29.2%);
+    --warning-700: hsl(26 90.5% 37.1%);
+    --danger-700: hsl(4.2 76.5% 40%);
+}
+
+.container {
+    width: min(90%, 1100px);
+    margin-inline: auto;
+}
+
+
+
+
+
+
+}
