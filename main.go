@@ -19,8 +19,6 @@ func main() {
 }
 
 func server() error {
-	
-
 
 	//ROUTES,TEMPLATES AND CONTROLLERS
 
@@ -28,7 +26,7 @@ func server() error {
 	cssFile := http.FileServer(http.Dir("assets"))
 
 	//Templates
-	tpl := views.Must(views.ParseFS(templates.FS, "home.html"))
+	tpl := views.Must(views.ParseFS(templates.FS, "home.html", "reusable.html"))
 
 	//Routes
 	mux := http.NewServeMux()

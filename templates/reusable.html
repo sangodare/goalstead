@@ -1,0 +1,111 @@
+{{define "header"}}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Goalstead</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet" />
+
+    <link href="/assets/style.css" rel="stylesheet" />
+</head>
+
+<body class="body flex flex-col">
+    <header class="padding-block-1 border-bottom-1">
+        <div class="container flex space-between">
+            <div>
+                <a class="flex link" href="/">
+                    <svg class="svg">
+                        <use href="/assets/icons/goalstead-mark.svg#goalstead"></use>
+                    </svg>
+                    <span class="logo align-center inline-block font-2rem font-bold cobalt">Goalstead</span></a>
+            </div>
+            <nav class="align-center width-60 font-013rem nav">
+                <ul class="flex space-between">
+                    <li>
+                        <a class="link grey nav__item hidden hover-black active-focus" href="/features">features</a>
+                    </li>
+                    <div class="flex space-between">
+                        <li>
+                            <a class="link grey hover-black active-focus" href="/signin">Sign in</a>
+                        </li>
+                        <li>
+                            <a class="link margin-left-1 padding-1 background-cobalt-h white border-radius active-background-f"
+                                href="/signup">Get started</a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    {{end}} {{define "footer"}}
+    <footer class="margin-top-auto font-012rem background-canvas border-bottom-radius padding-block-2 border-top-1">
+        <div class="container">
+            <div class="flex flex-dir gap-3 padding-bottom-2">
+                <div>
+                    <div>
+                        <a class="flex link" href="/">
+                            <svg class="svg">
+                                <use href="/assets/icons/goalstead-mark.svg#goalstead"></use>
+                            </svg>
+                            <span class="logo align-center inline-block font-2rem font-bold cobalt">Goalstead</span>
+                        </a>
+                    </div>
+                    <p class="grey width-60 margin-top-1 font-013rem footer__nav-p">
+                        Visible progress and supportive accountability for goals that take
+                        time.
+                    </p>
+                </div>
+                <nav class="flex footer__nav">
+                    <div>
+                        <h6 class="margin-bottom-1 font-013rem footer__nav-item">
+                            Product
+                        </h6>
+                        <div>
+                            <a class="link grey font-013rem footer__nav-item hover-black active-focus"
+                                href="/features">features</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h6 class="margin-bottom-1 font-013rem footer__nav-item">
+                            Get started
+                        </h6>
+                        <div class="grey flex flex-col gap-1">
+                            <a class="link grey font-013rem footer__nav-item hover-black active-focus"
+                                href="/signup">Create an account</a>
+                            <a class="link grey footer__nav-item hover-black active-focus" href="/signin">Sign in</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="flex flex-dir grey border-top-1 space-between padding-top-015">
+                <div class="flex gap-01 font-013rem">
+                    <svg class="svg svg--small cobalt-pressed">
+                        <use href="/assets/icons/shield-check.svg#shield"></use>
+                    </svg>
+                    <span class="align-center">You control what you share</span>
+                </div>
+                <div class="flex gap-01">
+                    <svg class="svg svg--small cobalt-pressed">
+                        <use href="/assets/icons/chart-no-axes-column-increasing.svg#chart"></use>
+                    </svg>
+                    <span class="align-center">Progress stays visible</span>
+                </div>
+                <div class="flex gap-01">
+                    <svg class="svg svg--small cobalt-pressed">
+                        <use href="/assets/icons/users.svg#users"></use>
+                    </svg>
+                    <span class="align-center">Support without pressure</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+{{end}}

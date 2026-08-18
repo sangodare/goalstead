@@ -8,36 +8,266 @@
 }
 
 :root {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+  font-size: 10px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 
-    --cobalt: hsl(215.9 90.9% 47.3%);
-    --cobalt-hover: hsl(216.3 91.3% 40.8%);
-    --cobalt-pressed: hsl(216.1 92% 34.3%);
-    --cobalt-soft: hsl(217.1 100% 95.9%);
-    --cobalt-soft-pressed: hsl(216 100% 93.1%);
-    --focus-ring: hsl(215.3 87% 75.9%);
+  --cobalt: hsl(215.9 90.9% 47.3%);
+  --cobalt-hover: hsl(216.3 91.3% 40.8%);
+  --cobalt-pressed: hsl(216.1 92% 34.3%);
+  --cobalt-soft: hsl(217.1 100% 95.9%);
+  --cobalt-soft-pressed: hsl(216 100% 93.1%);
+  --focus-ring: hsl(215.3 87% 75.9%);
+  --ink-950: hsl(220.9 39.3% 11%);
+  --ink-600: hsl(215 13.8% 34.1%);
+  --canvas: hsl(225 33.3% 97.6%);
+  --surface: hsl(0 0% 100%);
+  --line: hsl(217.5 17.4% 91%);
+  --success-700: hsl(142.4 71.8% 29.2%);
+  --warning-700: hsl(26 90.5% 37.1%);
+  --danger-700: hsl(4.2 76.5% 40%);
+}
+.body {
+  min-height: 100vh;
+}
 
-    --ink-950: hsl(220.9 39.3% 11%);
-    --ink-600: hsl(215 13.8% 34.1%);
-    --canvas: hsl(225 33.3% 97.6)%;
-    --surface: hsl(0 0% 100%);
-    --line: hsl(217.5 17.4% 91)%;
-
-    --success-700: hsl(142.4 71.8% 29.2%);
-    --warning-700: hsl(26 90.5% 37.1%);
-    --danger-700: hsl(4.2 76.5% 40%);
+.link {
+  text-decoration: none;
 }
 
 .container {
-    width: min(90%, 1100px);
-    margin-inline: auto;
+  width: min(90%, 1400px);
+  margin-inline: auto;
 }
 
+.svg {
+  height: 3rem;
+  aspect-ratio: 1;
+}
 
+.debug {
+  border: 2px solid red;
+}
 
+.flex {
+  display: flex;
+}
 
+.flex-col {
+  flex-direction: column;
+}
 
+.flex-1 {
+ flex: l;
 
+}
+
+.gap-01 {
+  gap: 0.1rem;
+}
+
+.gap-3 {
+  gap: 3rem;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.width-60 {
+  width: 60%;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-self: center;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+/* Font */
+.font-3rem {
+  font-size: 3rem;
+}
+
+.font-2rem {
+  font-size: 2rem;
+}
+
+.font-015rem {
+  font-size: 1.5rem;
+}
+
+.font-017rem {
+  font-size: 1.7rem;
+}
+
+.font-012rem {
+  font-size: 1.2rem;
+}
+
+.font-013rem {
+  font-size: 1.3rem;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+/* Padding */
+.padding-block-1 {
+  padding-block: 1.5rem;
+}
+
+.padding-1 {
+  padding: 1rem;
+}
+
+.padding-block-2 {
+  padding-block: 2rem;
+}
+
+.padding-top-015 {
+  padding-top: 1.5rem;
+}
+
+.padding-top-3 {
+  padding-top: 3rem;
+}
+
+.padding-bottom-2 {
+  padding-bottom: 2rem;
+}
+
+/*Margin */
+
+.margin-left-1 {
+  margin-left: 1rem;
+}
+
+.margin-top-075 {
+  margin-top: 0.75rem;
+}
+
+.margin-bottom-1 {
+  margin-bottom: 1rem;
+}
+
+.margin-top-auto {
+  margin-top: auto;
+}
+
+.margin-top-1 {
+  margin-top: 1rem;
+}
+
+/* Border */
+.border-bottom-1 {
+  border-bottom: 1px solid var(--line);
+}
+
+.border-top-1 {
+  border-top: 1px solid var(--line);
+}
+
+.border-radius {
+  border-radius: 8px;
+}
+
+.border-bottom-radius {
+  border-radius: 0 0 8px 8px;
+}
+
+/* Color */
+.background-cobalt-h {
+  background: var(--cobalt-hover);
+}
+
+.background-canvas {
+  background: var(--canvas);
+}
+
+.white {
+  color: var(--surface);
+}
+
+.grey {
+  color: var(--ink-600);
+}
+
+.cobalt {
+  color: var(--cobalt);
+}
+
+.cobalt-pressed {
+  color: var(--cobalt-pressed);
+}
+
+.hover-black:hover {
+  color: var(--ink-950);
+}
+
+.active-background-f:active {
+  background: var(--focus-ring);
+}
+
+.active-focus:active {
+  color: var(--focus-ring);
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .flex-dir {
+    flex-direction: column;
+  }
+
+  .footer__nav {
+    gap: 5rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .nav__item {
+    display: block;
+  }
+
+  .svg {
+    height: 4rem;
+  }
+
+  .svg--small {
+    height: 3rem;
+  }
+
+  .logo {
+    font-size: 3rem;
+  }
+
+  .nav {
+    font-size: 1.7rem;
+    margin-left: 20rem;
+  }
+
+  .footer__nav {
+    justify-content: space-around;
+    width: 50%;
+  }
+
+  .footer__nav-item,
+  .footer__nav-p {
+    font-size: 1.5rem;
+  }
 }
