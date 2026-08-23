@@ -1,6 +1,36 @@
 {{template "header" .}}
-<main class="flex-1 flex flex-dir">
-    <div></div>
-    <img src="" alt="snapshot of an hypothetical dashboard" />
+<main class="flex-1">
+    <div class="container">
+        <div class="flex flex-dir padding-block-4 gap-3">
+            <div class="hero-section-text">
+                <span class="font-017rem cobalt">PROGRESS WITH PURPOSE</span>
+                <h1 class="margin-top-1 font-5rem width-60 line-height-1 hero-section-heading">
+                    Finish what you started.
+                </h1>
+                <p class="line-height-012 grey margin-block-2 font-017rem hero-section-p">
+                    Make your progress visible and get the support that keeps you showing
+                    up when motivation fades.
+                </p>
+                <a class="link border-radius background-cobalt-h padding-1 flex gap-1 fit-content" href="/signup">
+                    <span class="white font-015rem align-center">Create your first goal</span>
+                    <svg class="svg svg--small white">
+                        <use href="/assets/icons/arrow_forward.svg#arrowright"></use>
+                    </svg>
+                </a>
+            </div>
+            <img class="width-100 hero-section-img" src="/assets/images/today-dashboard.png"
+                alt="goalstead dashboard preview" />
+        </div>
+        <div>
+            <div>
+                <span>HOW GOALSTEAD WORKS</span>
+                <h2>A clear path from intention to momentum.</h2>
+                <p>
+                    Goalstead turns a meaningful goal into scheduled action, visible
+                    progress and supportive accountability.
+                </p>
+            </div>
+        </div>
+    </div>
 </main>
 {{template "footer" .}}
