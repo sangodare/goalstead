@@ -40,7 +40,10 @@
                                 <use href="/assets/icons/goalstead-mark.svg#goalstead"></use>
                             </svg>
                         </div>
-                        <span class="align-center font-013rem cobalt inline-block">STEP 01</span>
+                        <div class="flex flex-dir gap-05">
+                            <span class="font-013rem cobalt align-center">STEP</span><span
+                                class="font-013rem cobalt align-center">01</span>
+                        </div>
                     </div>
                     <div class="align-center">
                         <h4 class="font-017rem margin-bottom-1">Define a goal</h4>
@@ -57,7 +60,10 @@
                                 <use href="/assets/icons/calendar.svg#calendar"></use>
                             </svg>
                         </div>
-                        <span class="align-center font-013rem cobalt">STEP 02</span>
+                        <div class="flex flex-dir gap-05">
+                            <span class="align-center font-013rem cobalt">STEP</span>
+                            <span class="font-013rem cobalt align-center">02</span>
+                        </div>
                     </div>
                     <div class="align-center">
                         <h4 class="font-017rem margin-bottom-1">Make a commitment</h4>
@@ -74,9 +80,12 @@
                                 <use href="/assets/icons/schedule.svg#schedule"></use>
                             </svg>
                         </div>
-                        <span class="align-center font-013rem cobalt">STEP 03</span>
+                        <div class="flex flex-dir gap-05">
+                            <span class="align-center font-013rem cobalt">STEP</span><span
+                                class="font-013rem cobalt align-center">03</span>
+                        </div>
                     </div>
-                    <div>
+                    <div class="align-center">
                         <h4 class="font-017rem margin-bottom-1">Log your progress</h4>
                         <p class="font-015rem grey">
                             Record the work you completed. Goalsted updates your status
@@ -91,9 +100,12 @@
                                 <use href="/assets/icons/users.svg#users"></use>
                             </svg>
                         </div>
-                        <span class="align-center font-013rem cobalt">STEP 04</span>
+                        <div class="flex flex-dir gap-05">
+                            <span class="align-center font-013rem cobalt">STEP</span><span
+                                class="align-center font-013rem cobalt">04</span>
+                        </div>
                     </div>
-                    <div>
+                    <div class="align-center">
                         <h4 class="font-017rem margin-bottom-1">Stay accountable</h4>
                         <p class="font-015rem grey">
                             Share the right goals with one trusted partner who can encourage
@@ -103,15 +115,44 @@
                 </div>
             </div>
         </div>
-        <div class="padding-block-5 border-top-1">
+        <div class="padding-block-5 border-top-1 flex flex-dir space-between gap-3">
             <div>
-                <span>PROGRESS TRACKING</span>
-                <h3>See the work adding up.</h3>
-                <p>
+                <span class="cobalt font-015rem">PROGRESS TRACKING</span>
+                <h3 class="font-4rem margin-bottom-2 margin-top-1 line-height-1 width-60">
+                    See the work adding up.
+                </h3>
+                <p class="font-017rem grey margin-bottom-2 progress-section-p">
                     Every valid session updates the commitment you made, so your progress
-                    reflects completed work
+                    reflects completed work.
                 </p>
+                <div class="flex gap-1">
+                    <svg class="svg svg--small cobalt-pressed flex-shrink-0">
+                        <use href="/assets/icons/check_circle.svg#checkcircle"></use>
+                    </svg>
+                    <p class="font-015rem">
+                        Today's status updates automatically as logged minutes accumulate.
+                    </p>
+                </div>
+                <div class="flex gap-1 margin-block-2">
+                    <svg class="svg svg--small cobalt-pressed flex-shrink-0">
+                        <use href="/assets/icons/calendar.svg#calendar"></use>
+                    </svg>
+                    <p class="font-015rem">
+                        Consistency and streaks count scheduled commitment days not every
+                        calendar day.
+                    </p>
+                </div>
+                <div class="flex gap-1">
+                    <svg class="svg svg--small cobalt-pressed flex-shrink-0">
+                        <use href="/assets/icons/chart-no-axes-column-increasing.svg#chart"></use>
+                    </svg>
+                    <p class="font-015rem">
+                        Total time, sessions and recent work remain visible for each goal.
+                    </p>
+                </div>
             </div>
+            <img class="width-100 progress-section-img flex-shrink-0" src="/assets/images/progress-tracking.png"
+                alt="progress tracking preview" />
         </div>
     </div>
 </main>
