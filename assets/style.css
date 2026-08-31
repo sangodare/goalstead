@@ -246,6 +246,10 @@
   margin-bottom: 3rem;
 }
 
+.margin-bottom-5 {
+  margin-bottom: 5rem;
+}
+
 /* Border */
 .border-bottom-1 {
   border-bottom: 1px solid var(--line);
@@ -324,6 +328,15 @@
   .footer__nav {
     gap: 5rem;
   }
+
+  .accountability-section-img {
+    order: 1;
+  }
+
+  .footer-cta-button {
+    align-items: center;
+    justify-content: center;
+  }
 }
 @media (min-width: 700px) {
   .nav__item {
@@ -356,7 +369,8 @@
   .hero-section-img,
   .hero-section-text,
   .hero-section-heading,
-  .progress-section-img {
+  .progress-section-img,
+  .accountability-section-img {
     width: 50%;
   }
 
@@ -367,6 +381,17 @@
 
   .flex-alt {
     flex-direction: column;
+  }
+
+  .footer-cta-button {
+    align-self: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .progress-section-heading,
+  .accountability-section-heading {
+    width: 80%;
   }
 }
 @media (min-width: 700px) and (max-width: 1024px) {
@@ -387,7 +412,7 @@
 
   .hero-section-p,
   .about-section-p,
-  .progress-section-p {
+  .progress-section-p .accountability-section-p {
     font-size: 2rem;
   }
 
