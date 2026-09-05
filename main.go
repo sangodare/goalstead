@@ -25,13 +25,17 @@ func server() error {
 	//Static files
 	cssFile := http.FileServer(http.Dir("assets"))
 
+	//controllers
+	usersC := controllers.Users{}
+
 	//Templates
-	tpl := views.Must(views.ParseFS(templates.FS, "home.html", "reusable.html"))
+	usersC.Templates.New = views.Must(views.ParseFS(templates.FS, "signup.html" ))
 
 	//Routes
 	mux := http.NewServeMux()
 	mux.Handle("GET /assets/", http.StripPrefix("/assets/", cssFile))
-	mux.Handle("GET /", controllers.StaticHandler(tpl))
+	mux.Handle("GET /", controllers.StaticHandler(views.Must(views.ParseFS(templates.FS, "home.html", "reusable.html"))))
+	mux.HandleFunc("GET /signup", usersC.New)
 
 	//Start up the Server
 	fmt.Println("starting up the server on port 4000")

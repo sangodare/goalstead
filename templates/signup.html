@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Goalstead</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet" />
+
+    <link href="/assets/style.css" rel="stylesheet" />
+</head>
+
+<body class="flex flex-dir signup-container">
+    <header class="padding-block-3 border-bottom-1 signup-header">
+        <a class="flex flex-alt gap-05 center-items link" href="/">
+                <svg class="svg cobalt-pressed signup-svg">
+                <use href="/assets/icons/goalstead-mark.svg#goalstead"></use>
+            </svg>
+            <span class="cobalt-pressed align-center font-2rem font-bold signup-logo-text">Goalstead</span>
+        </a>
+    </header>
+    <div class="container padding-top-3 signup-form">
+        <div class="padding-1 border-radius-50 background-cobalt-soft fit-content">
+            <svg class="svg svg--small cobalt-pressed">
+                <use href="/assets/icons/sparkles.svg#sparkle"></use>
+            </svg>
+        </div>
+        <h1 class="font-2rem margin-top-1">Create your account</h1>
+        <span class="grey font-017rem margin-bottom-2 margin-top-075 inline-block">You'll set up your first goal
+            next.</span>
+
+        <form action="/signup" method="post">
+            <div class="flex flex-col">
+                <label class="margin-bottom-1 font-015rem" for="email">Email Address</label>
+                <input class="padding-1 border-radius border-1 margin-bottom-1" type="email" name="email" value=""
+                    placeholder="Email address" id="email" />
+            </div>
+            <div class="flex flex-col">
+                <label class="margin-bottom-1 font-015rem" for="password">Password</label>
+                <input class="border-radius border-1 padding-1" type="password" name="password" value=""
+                    placeholder="Password" id="password" />
+            </div>
+
+            <button
+                class="padding-1 flex gap-1 margin-top-3 background-cobalt-h border-radius border-none width-100 center-items"
+                type="submit">
+                <span class="font-015rem white">Create account</span>
+                <svg class="svg svg--small white">
+                    <use href="/assets/icons/arrow_forward.svg#arrowright"></use>
+                </svg>
+            </button>
+        </form>
+        <p class="grey font-013rem margin-top-2 text-align-center">
+            Already have an account? <a href="/signin">Sign in</a>
+        </p>
+    </div>
+</body>
+
+</html>
