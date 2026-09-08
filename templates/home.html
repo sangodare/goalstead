@@ -1,221 +1,317 @@
-{{template "header" .}}
-<main>
-    <div class="container">
-        <div class="flex flex-dir padding-block-5 gap-3">
-            <div class="hero-section-text">
-                <span class="font-017rem cobalt">PROGRESS WITH PURPOSE</span>
-                <h1 class="margin-top-1 font-5rem width-60 line-height-1 hero-section-heading">
-                    Finish what you started.
-                </h1>
-                <p class="line-height-012 grey margin-block-2 font-017rem hero-section-p">
-                    Make your progress visible and get the support that keeps you showing
-                    up when motivation fades.
-                </p>
-                <a class="link border-radius background-cobalt-h padding-1 flex gap-1 fit-content" href="/signup">
-                    <span class="white font-015rem align-center">Create your first goal</span>
+{{template "head" .}}
+
+<body class="body flex flex-col">
+    <header class="padding-block-1 border-bottom-1">
+        <div class="container flex space-between">
+            <div>
+                <a class="flex link" href="/">
+                    <svg class="svg logo">
+                        <use href="/assets/icons/goalstead-mark.svg#goalstead"></use>
+                    </svg>
+                    <span class="logo-text align-center inline-block font-2rem font-bold cobalt">Goalstead</span></a>
+            </div>
+            <nav class="align-center width-60 font-013rem nav">
+                <ul class="flex space-between">
+                    <li>
+                        <a class="link grey nav__item hidden hover-black active-focus" href="/features">features</a>
+                    </li>
+                    <div class="flex space-between">
+                        <li>
+                            <a class="link grey hover-black active-focus" href="/signin">Sign in</a>
+                        </li>
+                        <li>
+                            <a class="link margin-left-1 padding-1 background-cobalt-h white border-radius active-background-f"
+                                href="/signup">Get started</a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="flex flex-dir padding-block-5 gap-3">
+                <div class="hero-section-text">
+                    <span class="font-017rem cobalt">PROGRESS WITH PURPOSE</span>
+                    <h1 class="margin-top-1 font-5rem width-60 line-height-1 hero-section-heading">
+                        Finish what you started.
+                    </h1>
+                    <p class="line-height-012 grey margin-block-2 font-017rem hero-section-p">
+                        Make your progress visible and get the support that keeps you
+                        showing up when motivation fades.
+                    </p>
+                    <a class="link border-radius background-cobalt-h padding-1 flex gap-1 fit-content" href="/signup">
+                        <span class="white font-015rem align-center">Create your first goal</span>
+                        <svg class="svg svg--small white">
+                            <use href="/assets/icons/arrow_forward.svg#arrowright"></use>
+                        </svg>
+                    </a>
+                </div>
+                <img class="width-100 hero-section-img flex-shrink-0" src="/assets/images/today-dashboard.png"
+                    alt="goalstead dashboard preview" />
+            </div>
+            <div class="padding-block-5 border-top-1">
+                <div class="text-align-center">
+                    <span class="cobalt font-015rem">HOW GOALSTEAD WORKS</span>
+                    <h2
+                        class="font-4rem line-height-1 margin-bottom-2 margin-top-1 about-section-heading margin-inline-auto">
+                        A clear path from intention to momentum.
+                    </h2>
+                    <p class="font-017rem grey about-section-p margin-inline-auto margin-bottom-3">
+                        Goalstead turns a meaningful goal into scheduled action, visible
+                        progress and supportive accountability.
+                    </p>
+                </div>
+                <div class="flex flex-dir gap-2">
+                    <div class="width-25 padding-2 background-canvas border-1 border-radius flex flex-alt gap-2">
+                        <div class="flex flex-dir gap-1">
+                            <div class="padding-1 border-radius-50 background-cobalt-soft fit-content">
+                                <svg class="svg svg--small cobalt-pressed">
+                                    <use href="/assets/icons/goalstead-mark.svg#goalstead"></use>
+                                </svg>
+                            </div>
+                            <div class="flex flex-dir gap-05">
+                                <span class="font-013rem cobalt align-center">STEP</span><span
+                                    class="font-013rem cobalt align-center">01</span>
+                            </div>
+                        </div>
+                        <div class="align-center">
+                            <h4 class="font-017rem margin-bottom-1">Define a goal</h4>
+                            <p class="grey font-015rem">
+                                Define what you want to finish, why it matters and a realistic
+                                target date.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="width-25 padding-2 background-canvas border-1 border-radius flex flex-alt gap-2">
+                        <div class="flex flex-dir gap-1">
+                            <div class="padding-1 border-radius-50 background-cobalt-soft fit-content">
+                                <svg class="svg svg--small cobalt-pressed">
+                                    <use href="/assets/icons/calendar.svg#calendar"></use>
+                                </svg>
+                            </div>
+                            <div class="flex flex-dir gap-05">
+                                <span class="align-center font-013rem cobalt">STEP</span>
+                                <span class="font-013rem cobalt align-center">02</span>
+                            </div>
+                        </div>
+                        <div class="align-center">
+                            <h4 class="font-017rem margin-bottom-1">Make a commitment</h4>
+                            <p class="font-015rem grey">
+                                Select the days you will show up and an optional minimum session
+                                length.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="width-25 padding-2 background-canvas border-1 border-radius flex flex-alt gap-2">
+                        <div class="flex flex-dir gap-1">
+                            <div class="padding-1 border-radius-50 background-cobalt-soft fit-content">
+                                <svg class="svg svg--small cobalt-pressed">
+                                    <use href="/assets/icons/schedule.svg#schedule"></use>
+                                </svg>
+                            </div>
+                            <div class="flex flex-dir gap-05">
+                                <span class="align-center font-013rem cobalt">STEP</span><span
+                                    class="font-013rem cobalt align-center">03</span>
+                            </div>
+                        </div>
+                        <div class="align-center">
+                            <h4 class="font-017rem margin-bottom-1">Log your progress</h4>
+                            <p class="font-015rem grey">
+                                Record the work you completed. Goalsted updates your status
+                                automatically.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="width-25 padding-2 background-canvas border-1 border-radius flex flex-alt gap-2">
+                        <div class="flex flex-dir gap-1">
+                            <div class="padding-1 border-radius-50 background-cobalt-soft fit-content">
+                                <svg class="svg svg--small cobalt-pressed">
+                                    <use href="/assets/icons/users.svg#users"></use>
+                                </svg>
+                            </div>
+                            <div class="flex flex-dir gap-05">
+                                <span class="align-center font-013rem cobalt">STEP</span><span
+                                    class="align-center font-013rem cobalt">04</span>
+                            </div>
+                        </div>
+                        <div class="align-center">
+                            <h4 class="font-017rem margin-bottom-1">Stay accountable</h4>
+                            <p class="font-015rem grey">
+                                Share the right goals with one trusted partner who can encourage
+                                you or send a timely nudge.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="padding-block-5 border-top-1 flex flex-dir space-between gap-3">
+                <div>
+                    <span class="cobalt font-015rem">PROGRESS TRACKING</span>
+                    <h3 class="font-4rem margin-bottom-2 margin-top-1 line-height-1 width-60 progress-section-heading">
+                        See the work adding up.
+                    </h3>
+                    <p class="font-017rem grey margin-bottom-2 progress-section-p">
+                        Every valid session updates the commitment you made, so your
+                        progress reflects completed work.
+                    </p>
+                    <div class="flex gap-1">
+                        <svg class="svg svg--small cobalt-pressed flex-shrink-0">
+                            <use href="/assets/icons/check_circle.svg#checkcircle"></use>
+                        </svg>
+                        <p class="font-015rem">
+                            Today's status updates automatically as logged minutes accumulate.
+                        </p>
+                    </div>
+                    <div class="flex gap-1 margin-block-2">
+                        <svg class="svg svg--small cobalt-pressed flex-shrink-0">
+                            <use href="/assets/icons/calendar.svg#calendar"></use>
+                        </svg>
+                        <p class="font-015rem">
+                            Consistency and streaks count scheduled commitment days not every
+                            calendar day.
+                        </p>
+                    </div>
+                    <div class="flex gap-1">
+                        <svg class="svg svg--small cobalt-pressed flex-shrink-0">
+                            <use href="/assets/icons/chart-no-axes-column-increasing.svg#chart"></use>
+                        </svg>
+                        <p class="font-015rem">
+                            Total time, sessions and recent work remain visible for each goal.
+                        </p>
+                    </div>
+                </div>
+                <img class="width-100 progress-section-img flex-shrink-0" src="/assets/images/progress-tracking.png"
+                    alt="progress tracking preview" />
+            </div>
+
+            <div class="flex flex-dir gap-3 padding-block-5 border-top-1">
+                <img class="width-100 accountability-section-img flex-shrink-0"
+                    src="/assets/images/accountability-partner.png" alt="accountability preview" />
+                <div>
+                    <span class="cobalt font-015rem">ACCOUNTABILITY PARTNER</span>
+                    <h3
+                        class="font-4rem width-60 margin-bottom-2 margin-top-1 line-height-1 accountability-section-heading">
+                        Support from someone who notices
+                    </h3>
+                    <p class="font-017rem margin-bottom-2 grey accountability-section-p">
+                        Connect with one trusted partner who can see the progress you choose
+                        to share and support you at the moments that matter.
+                    </p>
+                    <div>
+                        <div class="flex gap-1">
+                            <svg class="svg svg--small cobalt-pressed flex-shrink-0">
+                                <use href="/assets/icons/shield-check.svg#shield"></use>
+                            </svg>
+                            <p class="font-015rem">
+                                You choose whether each is public, partner only or private.
+                            </p>
+                        </div>
+                        <div class="flex gap-1 margin-block-2">
+                            <svg class="svg svg--small cobalt-pressed flex-shrink-0">
+                                <use href="/assets/icons/thumb-up.svg#thumbup"></use>
+                            </svg>
+                            <p class="font-015rem">
+                                Your partner can recognise completed work with well done or
+                                short check-in.
+                            </p>
+                        </div>
+                        <div class="flex gap-1">
+                            <svg class="svg svg--small cobalt-pressed flex-shrink-0">
+                                <use href="/assets/icons/paper-plane.svg#paperplane"></use>
+                            </svg>
+                            <p class="font-015rem">
+                                When a shared commitment is at risk, they can send one timely,
+                                supportive nudge.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="flex flex-dir padding-2 background-cobalt-soft border-radius gap-2 space-between margin-bottom-5">
+                <div>
+                    <p class="font-017rem">
+                        Each session becomes proof that you are still moving forward.
+                    </p>
+                    <p class="font-017rem grey margin-top-1">
+                        Your commitment, progress and partner suppport stay connected
+                        without excessive pressure.
+                    </p>
+                </div>
+                <a class="link border-radius background-cobalt-h padding-1 flex gap-1 footer-cta-button flex-shrink-0"
+                    href="/signup">
+                    <span class="white font-015rem">Create your first goal</span>
                     <svg class="svg svg--small white">
                         <use href="/assets/icons/arrow_forward.svg#arrowright"></use>
                     </svg>
                 </a>
             </div>
-            <img class="width-100 hero-section-img flex-shrink-0" src="/assets/images/today-dashboard.png"
-                alt="goalstead dashboard preview" />
         </div>
-        <div class="padding-block-5 border-top-1">
-            <div class="text-align-center">
-                <span class="cobalt font-015rem">HOW GOALSTEAD WORKS</span>
-                <h2
-                    class="font-4rem line-height-1 margin-bottom-2 margin-top-1 about-section-heading margin-inline-auto">
-                    A clear path from intention to momentum.
-                </h2>
-                <p class="font-017rem grey about-section-p margin-inline-auto margin-bottom-3">
-                    Goalstead turns a meaningful goal into scheduled action, visible
-                    progress and supportive accountability.
-                </p>
-            </div>
-            <div class="flex flex-dir gap-2">
-                <div class="width-25 padding-2 background-canvas border-1 border-radius flex flex-alt gap-2">
-                    <div class="flex flex-dir gap-1">
-                        <div class="padding-1 border-radius-50 background-cobalt-soft fit-content">
-                            <svg class="svg svg--small cobalt-pressed">
+    </main>
+    <footer class="margin-top-auto font-012rem background-canvas border-bottom-radius padding-block-2 border-top-1">
+        <div class="container">
+            <div class="flex flex-dir gap-3 padding-bottom-2">
+                <div>
+                    <div>
+                        <a class="flex link" href="/">
+                            <svg class="svg logo">
                                 <use href="/assets/icons/goalstead-mark.svg#goalstead"></use>
                             </svg>
-                        </div>
-                        <div class="flex flex-dir gap-05">
-                            <span class="font-013rem cobalt align-center">STEP</span><span
-                                class="font-013rem cobalt align-center">01</span>
-                        </div>
+                            <span
+                                class="logo-text align-center inline-block font-2rem font-bold cobalt">Goalstead</span>
+                        </a>
                     </div>
-                    <div class="align-center">
-                        <h4 class="font-017rem margin-bottom-1">Define a goal</h4>
-                        <p class="grey font-015rem">
-                            Define what you want to finish, why it matters and a realistic
-                            target date.
-                        </p>
-                    </div>
+                    <p class="grey width-60 margin-top-1 font-013rem footer__nav-p">
+                        Visible progress and supportive accountability for goals that take
+                        time.
+                    </p>
                 </div>
-                <div class="width-25 padding-2 background-canvas border-1 border-radius flex flex-alt gap-2">
-                    <div class="flex flex-dir gap-1">
-                        <div class="padding-1 border-radius-50 background-cobalt-soft fit-content">
-                            <svg class="svg svg--small cobalt-pressed">
-                                <use href="/assets/icons/calendar.svg#calendar"></use>
-                            </svg>
-                        </div>
-                        <div class="flex flex-dir gap-05">
-                            <span class="align-center font-013rem cobalt">STEP</span>
-                            <span class="font-013rem cobalt align-center">02</span>
+                <nav class="flex footer__nav">
+                    <div>
+                        <h6 class="margin-bottom-1 font-013rem footer__nav-item">
+                            Product
+                        </h6>
+                        <div>
+                            <a class="link grey font-013rem footer__nav-item hover-black active-focus"
+                                href="/features">features</a>
                         </div>
                     </div>
-                    <div class="align-center">
-                        <h4 class="font-017rem margin-bottom-1">Make a commitment</h4>
-                        <p class="font-015rem grey">
-                            Select the days you will show up and an optional minimum session
-                            length.
-                        </p>
-                    </div>
-                </div>
-                <div class="width-25 padding-2 background-canvas border-1 border-radius flex flex-alt gap-2">
-                    <div class="flex flex-dir gap-1">
-                        <div class="padding-1 border-radius-50 background-cobalt-soft fit-content">
-                            <svg class="svg svg--small cobalt-pressed">
-                                <use href="/assets/icons/schedule.svg#schedule"></use>
-                            </svg>
-                        </div>
-                        <div class="flex flex-dir gap-05">
-                            <span class="align-center font-013rem cobalt">STEP</span><span
-                                class="font-013rem cobalt align-center">03</span>
+                    <div>
+                        <h6 class="margin-bottom-1 font-013rem footer__nav-item">
+                            Get started
+                        </h6>
+                        <div class="grey flex flex-col gap-1">
+                            <a class="link grey font-013rem footer__nav-item hover-black active-focus"
+                                href="/signup">Create an account</a>
+                            <a class="link grey footer__nav-item hover-black active-focus" href="/signin">Sign in</a>
                         </div>
                     </div>
-                    <div class="align-center">
-                        <h4 class="font-017rem margin-bottom-1">Log your progress</h4>
-                        <p class="font-015rem grey">
-                            Record the work you completed. Goalsted updates your status
-                            automatically.
-                        </p>
-                    </div>
-                </div>
-                <div class="width-25 padding-2 background-canvas border-1 border-radius flex flex-alt gap-2">
-                    <div class="flex flex-dir gap-1">
-                        <div class="padding-1 border-radius-50 background-cobalt-soft fit-content">
-                            <svg class="svg svg--small cobalt-pressed">
-                                <use href="/assets/icons/users.svg#users"></use>
-                            </svg>
-                        </div>
-                        <div class="flex flex-dir gap-05">
-                            <span class="align-center font-013rem cobalt">STEP</span><span
-                                class="align-center font-013rem cobalt">04</span>
-                        </div>
-                    </div>
-                    <div class="align-center">
-                        <h4 class="font-017rem margin-bottom-1">Stay accountable</h4>
-                        <p class="font-015rem grey">
-                            Share the right goals with one trusted partner who can encourage
-                            you or send a timely nudge.
-                        </p>
-                    </div>
-                </div>
+                </nav>
             </div>
-        </div>
-        <div class="padding-block-5 border-top-1 flex flex-dir space-between gap-3">
-            <div>
-                <span class="cobalt font-015rem">PROGRESS TRACKING</span>
-                <h3 class="font-4rem margin-bottom-2 margin-top-1 line-height-1 width-60 progress-section-heading">
-                    See the work adding up.
-                </h3>
-                <p class="font-017rem grey margin-bottom-2 progress-section-p">
-                    Every valid session updates the commitment you made, so your progress
-                    reflects completed work.
-                </p>
-                <div class="flex gap-1">
-                    <svg class="svg svg--small cobalt-pressed flex-shrink-0">
-                        <use href="/assets/icons/check_circle.svg#checkcircle"></use>
+            <div class="flex flex-dir grey border-top-1 space-between padding-top-015 gap-1">
+                <div class="flex gap-05 font-013rem">
+                    <svg class="svg svg--small cobalt-pressed">
+                        <use href="/assets/icons/shield-check.svg#shield"></use>
                     </svg>
-                    <p class="font-015rem">
-                        Today's status updates automatically as logged minutes accumulate.
-                    </p>
+                    <span class="align-center">You control what you share</span>
                 </div>
-                <div class="flex gap-1 margin-block-2">
-                    <svg class="svg svg--small cobalt-pressed flex-shrink-0">
-                        <use href="/assets/icons/calendar.svg#calendar"></use>
-                    </svg>
-                    <p class="font-015rem">
-                        Consistency and streaks count scheduled commitment days not every
-                        calendar day.
-                    </p>
-                </div>
-                <div class="flex gap-1">
-                    <svg class="svg svg--small cobalt-pressed flex-shrink-0">
+                <div class="flex gap-05">
+                    <svg class="svg svg--small cobalt-pressed">
                         <use href="/assets/icons/chart-no-axes-column-increasing.svg#chart"></use>
                     </svg>
-                    <p class="font-015rem">
-                        Total time, sessions and recent work remain visible for each goal.
-                    </p>
+                    <span class="align-center">Progress stays visible</span>
+                </div>
+                <div class="flex gap-05">
+                    <svg class="svg svg--small cobalt-pressed">
+                        <use href="/assets/icons/users.svg#users"></use>
+                    </svg>
+                    <span class="align-center">Support without pressure</span>
                 </div>
             </div>
-            <img class="width-100 progress-section-img flex-shrink-0" src="/assets/images/progress-tracking.png"
-                alt="progress tracking preview" />
         </div>
+    </footer>
+</body>
 
-        <div class="flex flex-dir gap-3 padding-block-5 border-top-1">
-            <img class="width-100 accountability-section-img flex-shrink-0"
-                src="/assets/images/accountability-partner.png" alt="accountability preview" />
-            <div>
-                <span class="cobalt font-015rem">ACCOUNTABILITY PARTNER</span>
-                <h3
-                    class="font-4rem width-60 margin-bottom-2 margin-top-1 line-height-1 accountability-section-heading">
-                    Support from someone who notices
-                </h3>
-                <p class="font-017rem margin-bottom-2 grey accountability-section-p">
-                    Connect with one trusted partner who can see the progress you choose
-                    to share and support you at the moments that matter.
-                </p>
-                <div>
-                    <div class="flex gap-1">
-                        <svg class="svg svg--small cobalt-pressed flex-shrink-0">
-                            <use href="/assets/icons/shield-check.svg#shield"></use>
-                        </svg>
-                        <p class="font-015rem">
-                            You choose whether each is public, partner only or private.
-                        </p>
-                    </div>
-                    <div class="flex gap-1 margin-block-2">
-                        <svg class="svg svg--small cobalt-pressed flex-shrink-0">
-                            <use href="/assets/icons/thumb-up.svg#thumbup"></use>
-                        </svg>
-                        <p class="font-015rem">
-                            Your partner can recognise completed work with well done or short
-                            check-in.
-                        </p>
-                    </div>
-                    <div class="flex gap-1">
-                        <svg class="svg svg--small cobalt-pressed flex-shrink-0">
-                            <use href="/assets/icons/paper-plane.svg#paperplane"></use>
-                        </svg>
-                        <p class="font-015rem">
-                            When a shared commitment is at risk, they can send one timely,
-                            supportive nudge.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="flex flex-dir padding-2 background-cobalt-soft border-radius gap-2 space-between margin-bottom-5">
-            <div>
-                <p class="font-017rem">
-                    Each session becomes proof that you are still moving forward.
-                </p>
-                <p class="font-017rem grey margin-top-1">
-                    Your commitment, progress and partner suppport stay connected without
-                    excessive pressure.
-                </p>
-            </div>
-            <a class="link border-radius background-cobalt-h padding-1 flex gap-1 footer-cta-button flex-shrink-0" href="/signup">
-                <span class="white font-015rem">Create your first goal</span>
-                <svg class="svg svg--small white">
-                    <use href="/assets/icons/arrow_forward.svg#arrowright"></use>
-                </svg>
-            </a>
-        </div>
-    </div>
-</main>
-{{template "footer" .}}
+{{template "tail" .}}

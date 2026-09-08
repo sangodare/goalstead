@@ -1,22 +1,8 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Goalstead</title>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet" />
-
-    <link href="/assets/style.css" rel="stylesheet" />
-</head>
-
+{{template "head" .}}
 <body class="flex flex-dir signup-container">
     <header class="padding-block-3 border-bottom-1 signup-header">
         <a class="flex flex-alt gap-05 center-items link" href="/">
-                <svg class="svg cobalt-pressed signup-svg">
+            <svg class="svg cobalt-pressed signup-svg">
                 <use href="/assets/icons/goalstead-mark.svg#goalstead"></use>
             </svg>
             <span class="cobalt-pressed align-center font-2rem font-bold signup-logo-text">Goalstead</span>
@@ -58,5 +44,4 @@
         </p>
     </div>
 </body>
-
-</html>
+{{template "tail" .}}

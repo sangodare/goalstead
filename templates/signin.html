@@ -1,17 +1,4 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Goalstead</title>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet" />
-
-    <link href="/assets/style.css" rel="stylesheet" />
-</head>
+{{template "head" .}}
 
 <body class="flex flex-dir signup-container">
     <header class="padding-block-3 border-bottom-1 signup-header">
@@ -35,8 +22,8 @@
         <form action="/signin" method="post">
             <div class="flex flex-col">
                 <label class="margin-bottom-1 font-015rem" for="email">Email Address</label>
-                    <input class="padding-1 border-radius border-1 margin-bottom-1" type="email" name="email" value="{{.Email}}"
-                    placeholder="Email address" id="email" />
+                <input class="padding-1 border-radius border-1 margin-bottom-1" type="email" name="email"
+                    value="{{.Email}}" placeholder="Email address" id="email" />
             </div>
             <div class="flex flex-col">
                 <label class="margin-bottom-1 font-015rem" for="password">Password</label>
@@ -63,5 +50,5 @@
         </div>
     </div>
 </body>
+{{template "tail" .}}
 
-</html>
