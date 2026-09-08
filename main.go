@@ -30,12 +30,14 @@ func server() error {
 
 	//Templates
 	usersC.Templates.New = views.Must(views.ParseFS(templates.FS, "signup.html" ))
+usersC.Templates.SignIn = views.Must(views.ParseFS(templates.FS, "signin.html" ))
 
 	//Routes
 	mux := http.NewServeMux()
 	mux.Handle("GET /assets/", http.StripPrefix("/assets/", cssFile))
 	mux.Handle("GET /", controllers.StaticHandler(views.Must(views.ParseFS(templates.FS, "home.html", "reusable.html"))))
 	mux.HandleFunc("GET /signup", usersC.New)
+	mux.HandleFunc("GET /signin", usersC.SignIn)
 
 	//Start up the Server
 	fmt.Println("starting up the server on port 4000")
